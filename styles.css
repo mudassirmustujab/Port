@@ -1,0 +1,214 @@
+/* Utility Classes */
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.garamond {
+    font-family: 'EB Garamond', serif;
+}
+
+.font-900 {
+    font-weight: 2rem !important;
+}
+
+.font-size-2rem {
+    font-size: 1.8rem !important;
+}
+
+.font-size-1rem {
+    font-size: 1rem !important;
+}
+
+.width-9rem {
+    width: 9.3rem !important;
+}
+
+.bg-gainsboro {
+background-color:#E5EDF3;
+font-weight: lighter;
+
+}
+
+.bg-orange{
+    background-color: #FF4A17!important;
+}
+
+.bg-navy{
+    background-color: #121D24;
+}
+.input-padding{
+    padding: 7px 12px;
+}
+
+.vh-79{
+    height: 79vh;
+}
+.color-7777{
+    color: #777777;
+}
+.color-navy{
+    color: #263D4D;
+}
+.color-f3-bg{
+    background-color: #F3F5F5;
+}
+.color-white-bg{
+    background-color: white;
+}
+
+.outline-lightis{
+    outline-color: #ebe5e5;
+}
+
+.border-radius{
+    border-radius: 5px 0px 0px 5px;
+}
+.border-radius2{
+    border-radius: 0px 5px 5px 0px;
+}
+/* On Scroll Classes */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.display-none {
+    display: none !important;
+}
+
+ul li::before {
+    content: attr(data-icon);
+    /* Make slightly larger than the li font-size
+    but smaller than the li gap */
+    font-size: 1.25em;
+    
+    padding-right: 0.3rem  ;
+  }
+/* <!-- Section 1 starts here --> */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/* On Hover Classes*/
+
+.color-gray-hover:hover{
+    color: gainsboro!important;
+}
+
+.bg-white-color-orange-hover2:hover{
+    color: #FF4A17!important;
+    background-color: white!important;
+    transition: white, 0.5s;
+}
+ .bg-white-color-orange-hover:hover{
+    #sun, h4 , button {
+        color: #FF4A17!important;
+    } ;
+
+    background-color: white!important;
+    transition: white, 0.5s;
+}
+.color-white-bg-orange-hover:hover{
+    color: white!important;
+    background-color: #FF4A17;
+    transition: white, 0.5s;
+
+}
+
+.color-orange-hover:hover{
+    
+    color: #FF4A17!important;
+    transition: color, 0.5s;
+
+}
+/* For Navbar when it is on white background */
+.nav-colored{
+    background-color: #121d24bb!important;
+    height: 6rem;
+    z-index: 8;
+    overflow: hidden;
+    transition: 1.5s;
+}
+.sec1 {
+    height: 100vh;
+    background-image: url("assets/img/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: gray;
+    overflow-y: hidden;
+}
+
+/* Section 3 starts here */
+
+.sec3{
+    background-image: url("assets/img/about-boxes-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* Section 4 starts here */
+.sec4{
+    background-color: #F0F4F8;
+}
+/* Section 6 starts here */
+.sec6{
+    background-color: #F0F4F8;
+    color: #365870;
+}
+
+.sec6 p{
+    color: black;
+    font-weight: lighter;
+}
+/* Section 7 starts here */
+.sec7 {
+    height: auto !important;
+    background-image: url("assets/img/testimonials-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color:  gray;
+    color: white;
+    overflow-y: hidden;
+}
+
+/* Section 9 Starts here */
+.sec9{
+    background-color: #F0F4F8;
+}
+.box {
+    width: 85% !important;
+    margin: 0px auto;
+    position: relative;
+    bottom: 3rem;
+    background-color: white;
+    height: auto!important;
+    box-shadow: 1px 1px 7px gray;
+}
+
+/* Section 11 starts here */
+
+.sec11{
+    background-color: #15222B;
+    color: white;
+
+}
+
+/* Footer starts here */
+
+footer{
+    height: 15vh;
+}
