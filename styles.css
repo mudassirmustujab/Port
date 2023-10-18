@@ -1,4 +1,178 @@
+/* Loader Starts Here */
+/* Loader */
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#FF4A17;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader h1 {
+    font-size: 8vh;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 6vh;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.loader::after {
+    content: "";
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 5px solid whitesmoke;
+    border-top-color: #FF4A17;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 50%;
+    animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/*Loader Ends Here  */
+
+
 /* Utility Classes */
+.roboto {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .garamond {
+    font-family: "EB Garamond", serif;
+  }
+  
+  .krub {
+    font-family: "Krub", sans-serif;
+  }
+  
+  .raleway {
+    font-family: "Raleway", sans-serif!important;
+  }
+  .bottomLine {
+    margin-bottom: 0px !important;
+  }
+  
+  .bottomLineExt::after {
+    content: "_____";
+    display: block;
+    color: #aabbd7;
+    height: auto;
+    width: auto;
+    margin: auto auto;
+  }
+  
+  .orange {
+    color: #e03a3c;
+  }
+  .bgOrange {
+    background-color: #e03a3c;
+  }
+  .colorDarkBlue {
+    color: #2d405f !important;
+  }
+  .red{
+      color: #E03A3C;
+  }
+  .bgRed{
+      background-color: #E03A3C;
+  }
+  
+  .borderRed{
+      border: 2px solid #E03A3C;
+  }
+  .bgDarkBlue {
+    background-color: #2d405f !important;
+  }
+  
+  .lightBlue {
+    color: #3b54f8;
+  }
+  
+  .bgGain {
+    background-color: #f6f7ff;
+  }
+  
+  .txtGray {
+    color: #444444;
+  }
+  
+  .borderLight {
+    border: 1px solid white;
+  }
+
+  .borderLight2 {
+  
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+}
+
+  
+  .scale {
+    transform: scale(2.5);
+    margin-top: 1.2rem !important;
+    margin-right: 1.8rem !important;
+  }
+  .font15px{
+    font-size: 15px;
+}
+
+.font16px{
+    font-size: 16px;
+}
+
+.font18px{
+    font-size: 18px;
+}
+
+.font20px{
+    font-size: 20px;
+}
+
+.font22px{
+    font-size: 22px;
+}
+
+.font24px{
+    font-size: 24px;
+}
+
+.font36px{
+    font-size: 36px;
+}
+.font30px{
+    font-size: 30px;
+}
+
+.font48px{
+    font-size: 48px;
+}
+
+.font14px{
+    font-size: 13px;
+}
+  
+
+
 .openSans {
     font-family: 'Open Sans', sans-serif;
 }
@@ -146,23 +320,28 @@ ul li::before {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
-    background-color: gray;
+    background-color: rgb(91, 91, 91);
     overflow-y: hidden;
 }
 
 /* Section 3 starts here */
+nav ul li{
+font-size: 14px;
+text-transform: uppercase;
+}
 
 .sec3{
     background-image: url("assets/img/about-boxes-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.867);
+    background-blend-mode: lighten;
     
 }
 
 /* Section 4 starts here */
-.sec4{
-    background-color: #F0F4F8;
-}
+
 /* Section 6 starts here */
 .sec6{
     background-color: #F0F4F8;
@@ -173,12 +352,36 @@ ul li::before {
     color: black;
     font-weight: lighter;
 }
+
+/* Section (Clients) starts here */
+
+.secClients {
+    background-color: #f6f7ff;
+  }
+  
+  .secClients .col-lg-2 {
+    width: 8rem;
+  }
+  
+  .secClients img {
+    /* padding: 90%; */
+    filter: grayscale(100%) !important;
+   
+  }
+  
+  .secClients img:hover {
+    filter: grayscale(0%) !important;
+    transition: filter 1s;
+  }
+  
+  /* Section (Clients) Ends Here */
 /* Section 7 starts here */
 .sec7 {
     height: auto !important;
     background-image: url("assets/img/testimonials-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-blend-mode: multiply;
     background-color:  gray;
     color: white;
